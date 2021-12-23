@@ -3,7 +3,7 @@
   Title: DIP process
   Author: GTO90 <gto90@protonmail.com>
   Comments-Summary: No comments yet.
-  Comments-URI: https://github.com/bitcoin/dips/wiki/Comments:DIP-0001
+  Comments-URI: https://github.com/DigiByte-Core/dips/wiki/Comments:DIP-0001
   Status: Active
   Type: Process
   Created: 2021-12-22
@@ -65,7 +65,7 @@ If you are interested in assuming ownership of a DIP, send a message asking to t
 The current DIP editors are:
 
 * GTO90 ([[mailto:gto90@protonmail.com|gto90@protonmail.com]])
-* TBD
+* Jared Tate ([[mailto:jaredtate@protonmail.com|jaredtate@protonmail.com]])
 * TBD
 
 ===DIP Editor Responsibilities & Workflow===
@@ -84,7 +84,7 @@ For each new DIP that comes in an editor does the following:
 
 If the DIP isn't ready, the editor will send it back to the author for revision, with specific instructions.
 
-Once the DIP is ready for the repository it should be submitted as a "pull request" to the [https://github.com/DigiByte-Core/dipss DIPs git repository] where it may get further feedback.
+Once the DIP is ready for the repository it should be submitted as a "pull request" to the [https://github.com/DigiByte-Core/dips DIPs git repository] where it may get further feedback.
 
 The DIP editor will:
 
@@ -138,7 +138,7 @@ Each DIP must begin with an RFC 822 style header preamble. The headers must appe
   Created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
   License: <abbreviation for approved license(s)>
 * License-Code: <abbreviation for code under different approved license(s)>
-* Post-History: <dates of postings to bitcoin mailing list, or link to thread in mailing list archive>
+* Post-History: <dates of postings to DigiByte gitter channel, or link to thread in channel archive>
 * Requires: <DIP number(s)>
 * Replaces: <DIP number>
 * Superseded-By: <DIP number>
@@ -154,11 +154,11 @@ The format of the Author header value must be
 
 If there are multiple authors, each should be on a separate line following RFC 2822 continuation line conventions.
 
-While a DIP is in private discussions (usually during the initial Draft phase), a Discussions-To header will indicate the mailing list or URL where the DIP is being discussed. No Discussions-To header is necessary if the DIP is being discussed privately with the author, or on the bitcoin email mailing lists.
+While a DIP is in private discussions (usually during the initial Draft phase), a Discussions-To header will indicate the mailing list or URL where the DIP is being discussed. No Discussions-To header is necessary if the DIP is being discussed privately with the author, or on the DigiByte gitter channel.
 
 The Type header specifies the type of DIP: Standards Track, Informational, or Process.
 
-The Created header records the date that the DIP was assigned a number, while Post-History is used to record when new versions of the DIP are posted to bitcoin mailing lists.
+The Created header records the date that the DIP was assigned a number, while Post-History is used to record when new versions of the DIP are posted to DigiByte gitter channel.
 Dates should be in yyyy-mm-dd format, e.g. 2001-08-14.
 Post-History is permitted to be a link to a specific thread in a mailing list archive.
 
@@ -203,13 +203,13 @@ A process DIP may change status from Draft to Active when it achieves rough cons
 
 A soft-fork DIP strictly requires a clear miner majority expressed by blockchain voting (eg, using DIP 9). In addition, if the economy seems willing to make a "no confidence" hard-fork (such as a change in proof-of-work algorithm), the soft-fork does not become Final for as long as such a hard-fork might have majority support, or at most three months. Soft-fork DIPs may also set additional requirements for their adoption. Because of the possibility of changes to miner dynamics, especially in light of delegated voting (mining pools), it is highly recommended that a supermajority vote around 95% be required by the DIP itself, unless rationale is given for a lower threshold.
 
-A hard-fork DIP requires adoption from the entire DigiByte economy, particularly including those selling desirable goods and services in exchange for bitcoin payments, as well as DigiByte holders who wish to spend or would spend their bitcoins (including selling for other currencies) differently in the event of such a hard-fork. Adoption must be expressed by de facto usage of the hard-fork in practice (ie, not merely expressing public support, although that is a good step to establish agreement before adoption of the DIP). This economic adoption cannot be established merely by a super-majority, except by literally forcing the minority to accept the hard-fork (whether this is viable or not is outside the scope of this document).
+A hard-fork DIP requires adoption from the entire DigiByte economy, particularly including those selling desirable goods and services in exchange for DigiByte payments, as well as DigiByte holders who wish to spend or would spend their DigiBytes (including selling for other currencies) differently in the event of such a hard-fork. Adoption must be expressed by de facto usage of the hard-fork in practice (ie, not merely expressing public support, although that is a good step to establish agreement before adoption of the DIP). This economic adoption cannot be established merely by a super-majority, except by literally forcing the minority to accept the hard-fork (whether this is viable or not is outside the scope of this document).
 
 Peer services DIPs should be observed to be adopted by at least 1% of public listening nodes for one month.
 
 API/RPC and application layer DIPs must be implemented by at least two independent and compatible software applications.
 
-Software authors are encouraged to publish summaries of what DIPs their software supports to aid in verification of status changes. Good examples of this at the time of writing this DIP, can be observed in [https://github.com/bitcoin/bitcoin/blob/master/doc/dips.md DigiByte Core's doc/dips.md file] as well as [https://github.com/bitcoin-wallet/bitcoin-wallet/blob/master/wallet/README.specs.md DigiByte Wallet for Android's wallet/README.specs.md file].
+Software authors are encouraged to publish summaries of what DIPs their software supports to aid in verification of status changes. Good examples of this at the time of writing this DIP, can be observed in [https://github.com/DigiByte-Core/digibyte/blob/master/doc/dips.md DigiByte Core's doc/dips.md file].
 
 These criteria are considered objective ways to observe the de facto adoption of the DIP, and are not to be used as reasons to oppose or reject a DIP. Should a DIP become actually and unambiguously adopted despite not meeting the criteria outlined here, it should still be updated to Final status.
 
@@ -221,11 +221,11 @@ Why is this necessary at all?
 
 How is the entire DigiByte economy defined by people selling goods/services and holders?
 
-* For DigiByte to function as a currency, it must be accepted as payment. Bitcoins have no value if you cannot acquire anything in exchange for them. If everyone accepting such payments requires a particular set of consensus rules, "bitcoins" are de facto defined by that set of rules - this is already the case today. If those consensus rules are expected to broaden (as with a hard-fork), those merchants need to accept payments made under the new set of rules, or they will reject "bitcoins" as invalid. Holders are relevant to the degree in that they choose the merchants they wish to spend their bitcoins with, and could also as a whole decide to sell under one set of consensus rules or the other, thus flooding the market with bitcoins and crashing the price.
+* For DigiByte to function as a currency, it must be accepted as payment. DigiBytes have no value if you cannot acquire anything in exchange for them. If everyone accepting such payments requires a particular set of consensus rules, "DigiBytes" are de facto defined by that set of rules - this is already the case today. If those consensus rules are expected to broaden (as with a hard-fork), those merchants need to accept payments made under the new set of rules, or they will reject "DigiBytes" as invalid. Holders are relevant to the degree in that they choose the merchants they wish to spend their DigiBytes with, and could also as a whole decide to sell under one set of consensus rules or the other, thus flooding the market with DigiBytes and crashing the price.
 
 Why aren't <x> included in the economy?
 
-* Some entities may, to some degree, also be involved in offering goods and/or services in exchange for bitcoins, thus in that capacity (but not their capacity as <x>) be involved in the economy.
+* Some entities may, to some degree, also be involved in offering goods and/or services in exchange for DigiBytes, thus in that capacity (but not their capacity as <x>) be involved in the economy.
 * Miners are not included in the economy, because they merely *rely on* others to sell/spend their otherwise-worthless mined produce. Therefore, they must accept everyone else's direction in deciding the consensus rules.
 * Exchanges are not included in the economy, because they merely provide services of connecting the merchants and users who wish to trade. Even if all exchanges were to defect from DigiByte, those merchants and users can always trade directly and/or establish their own exchanges.
 * Developers are not included in the economy, since they merely write code, and it is up to others to decide to use that code or not.
@@ -237,7 +237,7 @@ But they're doing something important and have invested a lot in DigiByte! Shoul
 What if a single merchant wishes to block a hard-fork?
 
 * This DIP addresses only the progression of the DIP Status field, not the deployment of the hard-fork (or any other change) itself.
-* Regardless, one shop cannot operate in a vacuum: if they are indeed alone, they will soon find themselves no longer selling in exchange for bitcoin payments, as nobody else would exist willing to use the previous blockchain to pay them. If they are no longer selling, they cease to meet the criteria herein which enables their veto.
+* Regardless, one shop cannot operate in a vacuum: if they are indeed alone, they will soon find themselves no longer selling in exchange for DigiByte payments, as nobody else would exist willing to use the previous blockchain to pay them. If they are no longer selling, they cease to meet the criteria herein which enables their veto.
 
 How about a small number of merchants (maybe only two) who sell products to each other?
 
@@ -276,7 +276,7 @@ If a DIP is not yet completed, reviewers should instead post on the applicable d
 Some DIPs receive exposure outside the development community prior to completion, and other DIPs might not be completed at all. To avoid a situation where critical DIP reviews may go unnoticed during this period, reviewers may, at their option, still post their review on the comments page, provided they first post it to the mailing list and plan to later remove or revise it as applicable based on the completed version. Such revisions should be made by editing the previous review and updating the timestamp. Reviews made prior to the complete version may be removed if they are no longer applicable and have not been updated in a timely manner (eg, within one month).
 
 Pages must be named after the full DIP number (eg, "DIP 0001") and placed in the "Comments" namespace.
-For example, the link for DIP 1 will be https://github.com/bitcoin/dips/wiki/Comments:DIP-0001 .
+For example, the link for DIP 1 will be https://github.com/DigiByte-Core/dips/wiki/Comments:DIP-0001 .
 
 Comments posted to this wiki should use the following format:
 
@@ -297,8 +297,8 @@ Summary tones may be chosen from the following, but this DIP does not intend to 
 For example, the preamble to DIP 1 might be updated to include the line:
 
     Comments-Summary: No comments yet.
-    Comments-URI: https://github.com/bitcoin/dips/wiki/Comments:DIP-0001
-                  https://some-other-wiki.org/BIP_1_Comments
+    Comments-URI: https://github.com/DigiByte-Core/dips/wiki/Comments:DIP-0001
+                  https://some-other-wiki.org/DIP_1_Comments
 
 These fields must follow the "Discussions-To" header defined in DIP 1 (if that header is not present, it should follow the position where it would be present; generally this is immediately above the Status header).
 
