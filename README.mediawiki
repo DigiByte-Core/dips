@@ -14,17 +14,17 @@ Those proposing changes should consider that ultimately consent may rest with th
 !Type
 !Status
 |- style="background-color: #ffcfcf"
-| [[bip-0001.mediawiki|1]]
+| [[dip-0001.mediawiki|1]]
 |
-| BIP Purpose and Guidelines
-| Amir Taaki
+| DIP Purpose and Guidelines
+| GTO90
 | Process
 | Replaced
 |- style="background-color: #cfffcf"
-| [[bip-0002.mediawiki|2]]
+| [[dip-0002.mediawiki|2]]
 |
-| BIP process, revised
-| Luke Dashjr
+| DIP process, revised
+| GTO90
 | Process
 | Active
 |-
