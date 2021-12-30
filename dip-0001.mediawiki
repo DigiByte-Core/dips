@@ -204,7 +204,7 @@ Peer services DIPs should be observed to be adopted by at least 1% of public lis
 
 API/RPC and application layer DIPs must be implemented by at least two independent and compatible software applications.
 
-Software authors are encouraged to publish summaries of what DIPs their software supports to aid in verification of status changes. Good examples of this at the time of writing this DIP, can be observed in [https://github.com/DigiByte-Core/digibyte/blob/master/doc/dips.md DigiByte Core's doc/dips.md file].
+Software authors are encouraged to publish summaries of what DIPs their software supports to aid in verification of status changes. Good examples of this at the time of writing this DIP, can be observed in [https://github.com/DigiByte-Core/digibyte/blob/master/doc/bips.md DigiByte Core's doc/bips.md file].
 
 These criteria are considered objective ways to observe the de facto adoption of the DIP, and are not to be used as reasons to oppose or reject a DIP. Should a DIP become actually and unambiguously adopted despite not meeting the criteria outlined here, it should still be updated to Final status.
 
