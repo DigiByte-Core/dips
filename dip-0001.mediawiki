@@ -66,7 +66,7 @@ The current DIP editors are:
 
 * GTO90 ([[mailto:gto90@protonmail.com|gto90@protonmail.com]])
 * Jared Tate ([[mailto:jaredtate@protonmail.com|jaredtate@protonmail.com]])
-* TBD
+* Yoshi ([[mailto:yoshi@digibyte.org|yoshi@digibyte.org]])
 
 ===DIP Editor Responsibilities & Workflow===
 
@@ -104,11 +104,11 @@ DIPs should be written in mediawiki format.
 
 Each DIP should have the following parts:
 
-* Preamble -- Headers containing metadata about the DIP ([[#DIP header preamble|see below]]).
+* Preamble -- Headers containing metadata about the DIP ([[https://github.com/DigiByte-Core/dips/blob/feature/dip-0001/dip-0001.mediawiki#dip-header-preamble|see below]]).
 
 * Abstract -- A short (~200 word) description of the technical issue being addressed.
 
-* Copyright -- The DIP must be explicitly licensed under acceptable copyright terms ([[#DIP licensing|see below]]).
+* Copyright -- The DIP must be explicitly licensed under acceptable copyright terms ([[https://github.com/DigiByte-Core/dips/blob/feature/dip-0001/dip-0001.mediawiki#dip-licensing|see below]]).
 
 * Specification -- The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current DigiByte platforms.
 
