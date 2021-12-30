@@ -179,7 +179,7 @@ There are three kinds of DIP:
 
 The typical paths of the status of DIPs are as follows:
 
-<img src="dip-0002/process.png"></img>
+<img src="dip-0001/process.png"></img>
 
 Champions of a DIP may decide on their own to change the status between Draft, Deferred, or Withdrawn.
 A DIP editor may also change the status to Deferred when no progress is being made on the DIP.
