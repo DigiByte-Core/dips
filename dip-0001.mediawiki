@@ -79,7 +79,6 @@ For each new DIP that comes in an editor does the following:
 * The title should accurately describe the content.
 * The DIP draft must have been sent to the [https://gitter.im/DigiByte-Core/DIPS?utm_source=share-link&utm_medium=link&utm_campaign=share-link DigiByte-Core/DIPS] Gitter channel for discussion.
 * Motivation and backward compatibility (when applicable) must be addressed.
-* The defined Layer header must be correctly assigned for the given specification.
 * Licensing terms must be acceptable for DIPs.
 
 If the DIP isn't ready, the editor will send it back to the author for revision, with specific instructions.
@@ -126,7 +125,6 @@ Each DIP must begin with an RFC 822 style header preamble. The headers must appe
 
 <pre>
   DIP: <DIP number, or "?" before being assigned>
-* Layer: <Consensus (soft fork) | Consensus (hard fork) | Peer Services | API/RPC | Applications>
   Title: <DIP title; maximum 44 characters>
   Author: <list of authors' real names and email addrs>
 * Discussions-To: <email address>
@@ -143,9 +141,6 @@ Each DIP must begin with an RFC 822 style header preamble. The headers must appe
 * Replaces: <DIP number>
 * Superseded-By: <DIP number>
 </pre>
-
-The Layer header (only for Standards Track DIPs) documents which layer of DigiByte the DIP applies to.
-See [[dip-0123.mediawiki|DIP 123]] for definitions of the various DIP layers. Activation of this DIP implies activation of DIP 123.
 
 The Author header lists the names and email addresses of all the authors/owners of the DIP.
 The format of the Author header value must be
