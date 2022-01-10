@@ -66,7 +66,9 @@ The current DIP editors are:
 
 * GTO90 ([[mailto:gto90@protonmail.com|gto90@protonmail.com]])
 * Jared Tate ([[mailto:jaredtate@protonmail.com|jaredtate@protonmail.com]])
-* Yoshi ([[mailto:yoshi@digibyte.org|yoshi@digibyte.org]])
+* Yoshi ([[mailto:Yoshi@digibyte.org|Yoshi@digibyte.org]])
+* Barry ([[mailto:baz@tiltpool.com|baz@tiltpool.com]])
+* Ammar ([[mailto:mrnygma@digibyte.io|mrnygma@digibyte.io]])
 
 ===DIP Editor Responsibilities & Workflow===
 
