@@ -69,6 +69,8 @@ The current DIP editors are:
 * Yoshi ([[mailto:Yoshi@digibyte.org|Yoshi@digibyte.org]])
 * Barry ([[mailto:baz@tiltpool.com|baz@tiltpool.com]])
 * Ammar ([[mailto:mrnygma@digibyte.io|mrnygma@digibyte.io]])
+* Gary ([[mailto:gary@lifehash.com|gary@lifehash.com]])
+* John ([[mailto:john@dgballiance.org|john@dgballiance.org]])
 
 ===DIP Editor Responsibilities & Workflow===
 
