@@ -85,7 +85,7 @@ As we will see, every accumulated supply equation is indeed a sum. We can easily
 
 '''Phase 3:''' <img src="https://render.githubusercontent.com/render/math?math=\overline{e}_{3}=\sum_{n=5760}^{67200-1}8000=61439*8000=491,512,000"/>
 
-'''Phase 4:''' <img src="https://render.githubusercontent.com/render/math?math=\overline{e}_{4}=\sum_{n=67200}^{400000-1}8000*0.995^{1%2B\lfloor\frac{n-67200}{10080}\rfloor}">
+'''Phase 4:''' <img src="https://render.githubusercontent.com/render/math?math=\overline{e}_{4}=\sum_{n=67200}^{400000-1}8000*0.995^{1%2B\lfloor\frac{n-67200}{10080}\rfloor}"/>
 
 
 <img src="https://render.githubusercontent.com/render/math?math==10080 * 8000 * (\frac{1-0.995^{p_{max}}}{1 - 0.995} - 1 %2B \frac{(n - 67200) \: mod \: 10080}{10080} * 0.995^{p_{max}})"/>
@@ -94,7 +94,7 @@ with
 
 <img src="https://render.githubusercontent.com/render/math?math=pmax = \lfloor \frac{n - 67200}{10080} \rfloor %2B 1"/>
 
-<code>2,447,614,196.3463006</code>
+<code>=2,447,614,196.3463006</code>
 
 
 '''Phase 5:''' <img src="https://render.githubusercontent.com/render/math?math=\overline{e}_{5}=\sum_{n=400000}^{1430000-1}2459*0.99^{1%2B\lfloor\frac{n-400000}{80160}\rfloor}"/>
@@ -105,7 +105,7 @@ with
 
 <img src="https://render.githubusercontent.com/render/math?math=pmax = \lfloor \frac{n - 400000}{80160} \rfloor %2B 1"/>
 
-<code>2,364,016,479.668779</code>
+<code>=2,364,016,479.668779</code>
 
 '''Phase 6:''' Currently, the interval of phase 6 points to infinite. By setting a value for <code>N</code> in the following equation, the equation yields the accumulated supply up to <code>N</code>:
 
@@ -148,4 +148,4 @@ Since this DIP is a draft, I hereby invite the community to vote for one of the 
 == Appendix == 
 * Simulation program code: cut off emission calculator (python)
 
-[[:File:./dip-subsidy_fix/simulate.py|simulate.py]]
+[[:File:dip-subsidy_fix/simulate.py|simulate.py]]
