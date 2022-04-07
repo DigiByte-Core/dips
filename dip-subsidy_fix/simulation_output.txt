@@ -1,0 +1,7 @@
+Finding cutoff block number and last block emission
+height = 10000000, circulating_supply = 1262851341913013221
+height = 20000000, circulating_supply = 1725390551404945865
+height = 30000000, circulating_supply = 1969142337055677715
+height = 40000000, circulating_supply = 2097598365856027708
+Cutoff at block height 40264288 with emission of 5111752064
+Expected timestamp of block 40264288: 2030770254
