@@ -1,5 +1,3 @@
-= DIP-Subsidy =
-
 <pre>
   DIP-Subsidy
   Layer: Consensus (soft fork)
@@ -8,6 +6,7 @@
   Status: Draft
   Created: 2021-01-24
 </pre>
+= DIP-Subsidy =
 
 <blockquote>Every minute Dogecoin’s subsidy emits about 1000 DOGE. In 14 years, DigiByte would emit 4 DGB/minute. Even if $DGB reached a rate of $10 USD, this is nothing compared to $DOGE. Yet I agree, it is important to fix it. I promise it will be already fixed within half a year from now
 </blockquote>
@@ -63,6 +62,7 @@ Similar to phase 4, but with an adjusted factor of <code>0.99</code> every <code
 
 Phase 6 is a bit different from the others. Instead it uses DigiByte's block time to determine a monthly decay factor of <code>0.98884</code> in interval <code>[1430000,∞)</code> or <code>[1430000, f)</code>:
 
+
 <img src="https://render.githubusercontent.com/render/math?math=e_{6}(n)=\frac{1}{2}*2157*0.98884^{\lfloor\frac{(n - 1430000) * 15}{3600*24*365/12}\rfloor}">
 
 As a proof that this formula is correct, we can check in one of the recent blocks [https://chainz.cryptoid.info/dgb/block.dws?14413916.htm 14413916].
@@ -85,13 +85,15 @@ As we will see, every accumulated supply equation is indeed a sum. We can easily
 
 '''Phase 4:''' <img src="https://render.githubusercontent.com/render/math?math=\overline{e}_{4}=\sum_{n=67200}^{400000-1}8000*0.995^{1%2B\lfloor\frac{n-67200}{10080}\rfloor}">
 
+
 <img src="https://render.githubusercontent.com/render/math?math==10080 * 8000 * (\frac{1-0.995^{p_{max}}}{1 - 0.995} - 1 %2B \frac{(n - 67200) \: mod \: 10080}{10080} * 0.995^{p_{max}})">
 
 with
 
 <img src="https://render.githubusercontent.com/render/math?math=pmax = \lfloor \frac{n - 67200}{10080} \rfloor %2B 1">
 
-<code>= 2,447,614,196.3463006</code>
+<code>2,447,614,196.3463006</code>
+
 
 '''Phase 5:''' <img src="https://render.githubusercontent.com/render/math?math=\overline{e}_{5}=\sum_{n=400000}^{1430000-1}2459*0.99^{1%2B\lfloor\frac{n-400000}{80160}\rfloor}">
 
@@ -101,7 +103,7 @@ with
 
 <img src="https://render.githubusercontent.com/render/math?math=pmax = \lfloor \frac{n - 400000}{80160} \rfloor %2B 1">
 
-<code>= 2,364,016,479.668779</code>
+<code>2,364,016,479.668779</code>
 
 '''Phase 6:''' Currently, the interval of phase 6 points to infinite. By setting a value for <code>N</code> in the following equation, the equation yields the accumulated supply up to <code>N</code>:
 
@@ -112,6 +114,7 @@ with
 with
 
 <img src="https://render.githubusercontent.com/render/math?math=p_{last}(N):=\lfloor \frac{N-1430000}{175200} \rfloor, N \in \mathbb{N}^{%2b}, N \ge 1430000">
+
 
 == Current Circulating Supply ==
 
@@ -133,11 +136,14 @@ Only <code>5,963,183,235.817808 DGB</code> will be left to mine.
 
 == Our Options ==
 
-# We can either adjust <code>N</code> in <img src="https://render.githubusercontent.com/render/math?math=\overline{e}_{6}(N)"> in a way, that the sum of all phases (inclusive the genesis block) equals <code>21,000,000,000 billion DGB</code> and change the subsidy code of <code>GetBlockSubsidy()</code> to disable emissions for blocks after that block height. Undoubtedly, the chance that we will reach the '''exact''' amount of <code>21,000,000,000 DGB</code> is very low. In that case, the block with block height <code>N</code> should in that case yield the amount needed to reach <code>21,000,000,000 billion DGB</code> circulating supply. All blocks after <code>N</code> will yield <code>0 DGB</code>. As shown by the attached simulation, the current implementation would need a cutoff at block height <code>40,264,288</code> with an emission of <code>51.11752064 DGB</code>. The last block would be mined at <code>2034-05-09T06:50:54.000Z</code> (estimate). All subsequent blocks will give <code>0 DGB</code>.
-# Instead, we could also propose another subsidy equation that becomes active after block height <code>f</code> and slowly decays so that we get <code>21,000,000,000 DGB</code> in year 2035.
+# We can either adjust <code>N</code> in <img src="https://render.githubusercontent.com/render/math?math=\overline{e}_{6}(N)"> in a way, that the sum of all phases (inclusive the genesis block) equals <code>21,000,000,000 billion DGB</code> and change the subsidy code of <code>GetBlockSubsidy()</code> to disable emissions for blocks after that block height. Undoubtedly, the chance that we will reach the '''exact''' amount of <code>21,000,000,000 DGB</code> is very low. In that case, the block with block height <code>N</code> should in that case yield the amount needed to reach <code>21,000,000,000 billion DGB</code> circulating supply. All blocks after <code>N</code> will yield <code>0 DGB</code>. As shown by the attached simulation, the current implementation would need a cutoff at block height <code>40,264,288</code> with an emission of <code>51.11752064 DGB</code>. The last block would be mined on 2034-05-09 06:50:54.000Z (estimate). All subsequent blocks will give <code>0 DGB</code>.
 
-Since this DIP is a draft, I hereby invite the community to vote for one of the two options. The attached simulation will be modified according to the community's decision.
 
-== Appendix ==
+# Instead, we could also propose another subsidy equation that becomes active after block height `f` and slowly decays so that we get `21,000,000,000 DGB` in year 2035.
 
+Since this DIP is a draft, I hereby invite the community to vote for one of the two options. The attached simulation will be modified according to the community's decision and yield the correct parameters for DigiByte Core's new subsidy code.
+  
+== Appendix == 
 * Simulation program code: cut off emission calculator (python)
+
+[[:File:./dip-subsidy_fix/simulate.py|simulate.py]]
