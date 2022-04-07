@@ -327,4 +327,5 @@ def check():
 
 if __name__ == '__main__':
 	use_shortcut = False
+	check()
 	find_cutoff_with_current_subsidy(use_shortcut)

@@ -1,3 +1,50 @@
+Single picks (math):
+math_phase1_single(1000):    7200000000000
+math_phase2_single(2000):    1600000000000
+math_phase3_single(10000):   800000000000
+math_phase4_single(100000):  784119600500.0
+math_phase5_single(1000000): 226902920359.82553
+math_phase6_single(5000000): 86166939565.99516
+
+Accumulated (math):
+math_phase1_acc(1000):       7200000000000000
+math_phase2_acc(2000):       897600000000000
+math_phase3_acc(10000):      3392800000000000
+math_phase4_acc(100000):     2.5959015688880556e+16
+math_phase5_acc(1000000):    1.4139145884214869e+17
+math_phase6_acc(5000000):    3.460878378734266e+17
+
+Single picks (sim):
+sim_phase1_single(1000):    7200000000000
+sim_phase2_single(2000):    1600000000000
+sim_phase3_single(10000):   800000000000
+sim_phase4_single(100000):  784119600500
+sim_phase5_single(1000000): 226902920362
+sim_phase6_single(5000000): 86166939557
+
+Accumulated (sim):
+sim_phase1_acc(1000):       7200000000000000
+sim_phase2_acc(2000):       897600000000000
+sim_phase3_acc(10000):      3392800000000000
+sim_phase4_acc(100000):     25959015688880500
+sim_phase5_acc(1000000):    141391458842518282
+sim_phase6_acc(5000000):    346087837858322357
+
+Errors (single):
+e(phase1_single) =          0
+e(phase2_single) =          0
+e(phase3_single) =          0
+e(phase4_single) =          0.0
+e(phase5_single) =          -2.174468994140625
+e(phase6_single) =          8.995162963867188
+
+Errors (acc):
+e(phase1_acc) =             0
+e(phase2_acc) =             0
+e(phase3_acc) =             0
+e(phase4_acc) =             56.0
+e(phase5_acc) =             -369600.0
+e(phase6_acc) =             15104256.0
 Finding cutoff block number and last block emission
 height = 10000000, circulating_supply = 1262851341913013221
 height = 20000000, circulating_supply = 1725390551404945865
