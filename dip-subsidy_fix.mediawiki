@@ -146,6 +146,5 @@ Only <code>5,963,183,235.817808 DGB</code> will be left to mine.
 Since this DIP is a draft, I hereby invite the community to vote for one of the two options. The attached simulation will be modified according to the community's decision and yield the correct parameters for DigiByte Core's new subsidy code.
 
 == Appendix == 
-* Simulation program code: cut off emission calculator (python)
+* Simulation program code: cut off emission calculator (python) <a href="./dip-subsidy_fix/simulate.py">simulate.py</a>
 
-[[:File:dip-subsidy_fix/simulate.py|simulate.py]]
