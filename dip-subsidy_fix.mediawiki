@@ -139,10 +139,10 @@ Only <code>5,963,183,235.817808 DGB</code> will be left to mine.
 # We can either adjust <code>N</code> in <img src="https://render.githubusercontent.com/render/math?math=\overline{e}_{6}(N)"> in a way, that the sum of all phases (inclusive the genesis block) equals <code>21,000,000,000 billion DGB</code> and change the subsidy code of <code>GetBlockSubsidy()</code> to disable emissions for blocks after that block height. Undoubtedly, the chance that we will reach the '''exact''' amount of <code>21,000,000,000 DGB</code> is very low. In that case, the block with block height <code>N</code> should in that case yield the amount needed to reach <code>21,000,000,000 billion DGB</code> circulating supply. All blocks after <code>N</code> will yield <code>0 DGB</code>. As shown by the attached simulation, the current implementation would need a cutoff at block height <code>40,264,288</code> with an emission of <code>51.11752064 DGB</code>. The last block would be mined on 2034-05-09 06:50:54.000Z (estimate). All subsequent blocks will give <code>0 DGB</code>.
 
 
-# Instead, we could also propose another subsidy equation that becomes active after block height `f` and slowly decays so that we get `21,000,000,000 DGB` in year 2035.
+# Instead, we could also propose another subsidy equation that becomes active after block height <code>f</code> and slowly decays so that we get <code>21,000,000,000 DGB</code> in year 2035.
 
 Since this DIP is a draft, I hereby invite the community to vote for one of the two options. The attached simulation will be modified according to the community's decision and yield the correct parameters for DigiByte Core's new subsidy code.
-  
+
 == Appendix == 
 * Simulation program code: cut off emission calculator (python)
 
