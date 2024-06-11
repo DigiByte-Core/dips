@@ -19,7 +19,7 @@ Those proposing changes should consider that ultimately consent may rest with th
 | DIP Purpose and Guidelines
 | GTO90
 | Process
-| Draft
+| Final
 |-
 |}
 
