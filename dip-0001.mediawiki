@@ -4,7 +4,7 @@
   Author: GTO90 <gto90@protonmail.com>
   Comments-Summary: No comments yet.
   Comments-URI: https://github.com/DigiByte-Core/dips/wiki/Comments:DIP-0001
-  Status: Active
+  Status: Final
   Type: Process
   Created: 2021-12-22
   License: BSD-2-Clause
