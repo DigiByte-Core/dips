@@ -29,18 +29,18 @@ The DIP process begins with a new idea for DigiByte. Each potential DIP must hav
 Small enhancements or patches to a particular piece of software often don't require standardisation between multiple projects; these don't need a DIP and should be injected into the relevant project-specific development workflow with a patch submission to the applicable issue tracker.
 Additionally, many ideas have been brought forward for changing DigiByte that have been rejected for various reasons.
 The first step should be to search past discussions to see if an idea has been considered before, and if so, what issues arose in its progression.
-After investigating past work, the best way to proceed is by posting about the new idea to the [https://gitter.im/DigiByte-Core/DIPS?utm_source=share-link&utm_medium=link&utm_campaign=share-link DigiByte-Core/DIPS] Gitter channel.
+After investigating past work, the best way to proceed is by posting about the new idea to the [https://github.com/DigiByte-Core/dips/discussions/categories/dip-discussions] DIPs Discussion Forum.
 
 Vetting an idea publicly before going as far as writing a DIP is meant to save both the potential author and the wider community time.
 Asking the DigiByte community first if an idea is original helps prevent too much time being spent on something that is guaranteed to be rejected based on prior discussions (searching the internet does not always do the trick).
 It also helps to make sure the idea is applicable to the entire community and not just the author. Just because an idea sounds good to the author does not mean it will work for most people in most areas where DigiByte is used.
 
-Once the champion has asked the DigiByte community as to whether an idea has any chance of acceptance, a draft DIP should be presented to the [https://gitter.im/DigiByte-Core/DIPS?utm_source=share-link&utm_medium=link&utm_campaign=share-link DigiByte-Core/DIPS] Gitter channel.
+Once the champion has asked the DigiByte community as to whether an idea has any chance of acceptance, a draft DIP should be presented to the [https://github.com/DigiByte-Core/dips/discussions/categories/dip-discussions] DIPs Discussion Forum.
 This gives the author a chance to flesh out the draft DIP to make it properly formatted, of high quality, and to address additional concerns about the proposal.
 Following a discussion, the proposal should be submitted to the [https://github.com/DigiByte-Core/dips DIPs git repository] as a pull request.
 This draft must be written in DIP style as described below, and named with an alias such as "dip-johndoe-newfeature" until an editor has assigned it a DIP number (authors MUST NOT self-assign DIP numbers).
 
-DIP authors are responsible for collecting community feedback on both the initial idea and the DIP before submitting it for review. However, wherever possible, long open-ended discussions on public gitter channels should be avoided. Strategies to keep the discussions efficient include: setting up a separate communications channels for the topic, having the DIP author accept private comments in the early design phases, setting up a wiki page or git repository, etc. DIP authors should use their discretion here.
+DIP authors are responsible for collecting community feedback on both the initial idea and the DIP before submitting it for review. However, wherever possible, long open-ended discussions on public discussion channels should be avoided. Strategies to keep the discussions efficient include: setting up a separate communications channels for the topic, having the DIP author accept private comments in the early design phases, setting up a wiki page or git repository, etc. DIP authors should use their discretion here.
 
 It is highly recommended that a single DIP contain a single key proposal or new idea. The more focused the DIP, the more successful it tends to be. If in doubt, split your DIP into several well-focused ones.
 
@@ -74,14 +74,14 @@ The current DIP editors are:
 
 ===DIP Editor Responsibilities & Workflow===
 
-The DIP editors subscribe to the [https://gitter.im/DigiByte-Core/DIPS?utm_source=share-link&utm_medium=link&utm_campaign=share-link DigiByte-Core/DIPS] Gitter channel.
+The DIP editors subscribe to the [https://github.com/DigiByte-Core/dips/discussions] Discussions forum.
 Off-channel DIP-related correspondence should be sent (or CC'd) to the DIP editors.
 
 For each new DIP that comes in an editor does the following:
 
 * Read the DIP to check if it is ready: sound and complete. The ideas must make technical sense, even if they don't seem likely to be accepted.
 * The title should accurately describe the content.
-* The DIP draft must have been sent to the [https://gitter.im/DigiByte-Core/DIPS?utm_source=share-link&utm_medium=link&utm_campaign=share-link DigiByte-Core/DIPS] Gitter channel for discussion.
+* The DIP draft must have been sent to the [https://github.com/DigiByte-Core/dips/discussions/categories/dip-discussions] DIPs forum for discussion.
 * Motivation and backward compatibility (when applicable) must be addressed.
 * Licensing terms must be acceptable for DIPs.
 
@@ -140,7 +140,7 @@ Each DIP must begin with an RFC 822 style header preamble. The headers must appe
   Created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
   License: <abbreviation for approved license(s)>
 * License-Code: <abbreviation for code under different approved license(s)>
-* Post-History: <dates of postings to DigiByte gitter channel, or link to thread in channel archive>
+* Post-History: <dates of postings to DigiByte discussion forum, or link to thread in channel archive>
 * Requires: <DIP number(s)>
 * Replaces: <DIP number>
 * Superseded-By: <DIP number>
@@ -153,11 +153,11 @@ The format of the Author header value must be
 
 If there are multiple authors, each should be on a separate line following RFC 2822 continuation line conventions.
 
-While a DIP is in private discussions (usually during the initial Draft phase), a Discussions-To header will indicate the mailing list or URL where the DIP is being discussed. No Discussions-To header is necessary if the DIP is being discussed privately with the author, or on the DigiByte gitter channel.
+While a DIP is in private discussions (usually during the initial Draft phase), a Discussions-To header will indicate the mailing list or URL where the DIP is being discussed. No Discussions-To header is necessary if the DIP is being discussed privately with the author, or on the DigiByte discussion forum.
 
 The Type header specifies the type of DIP: Standards Track, Informational, or Process.
 
-The Created header records the date that the DIP was assigned a number, while Post-History is used to record when new versions of the DIP are posted to DigiByte gitter channel.
+The Created header records the date that the DIP was assigned a number, while Post-History is used to record when new versions of the DIP are posted to DigiByte discussion forum.
 Dates should be in yyyy-mm-dd format, e.g. 2001-08-14.
 Post-History is permitted to be a link to a specific thread in a mailing list archive.
 
