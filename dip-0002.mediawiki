@@ -1,0 +1,220 @@
+<pre>
+  DIP: 2
+  Title: Remove Third-Party Links from DigiByte.org
+  Author: GTO90 <gto90@protonmail.com>
+  Comments-Summary: Mix of encouraged and discouraged implementation, with some feedback addressed in this draft DIP to move all external and social media links to the DigiByte Wiki and Discussion Forum as well as provide a more prominant promotion of the DigiByte Wiki.
+  Comments-URI: https://github.com/DigiByte-Core/dips/discussions/7
+  Status: Draft
+  Type: Informational
+  Created: 2024-06-20
+  License: BSD-2-Clause
+           OPL
+</pre>
+
+==Abstract==
+
+The purpose of this DigiByte Improvement Proposal (DIP) is to discontinue promoting third-party social networking applications, websites, and advocacy groups on the DigiByte.org website. By removing these external links, we aim to focus community engagement and informational resources within the DigiByte-Core GitHub ecosystem. Visitors of [www.digibyte.org] seeking more information, especially third-party content, will be directed to the DigiByte-Core/digibyte GitHub Discussions forum and Wiki. This approach will ensure that all discussions, updates, and resources are consolidated in a single authoritative location, promoting transparency, consistency, and better collaboration within the community. This change will also enhance security by reducing the risk of misinformation and reliance on third-party platforms and advocacy groups. Ultimately, this DIP seeks to strengthen the DigiByte development community’s focus on core development and authoritative resources, fostering a more cohesive and informed environment for all protocol stakeholders representing the DigiByte protocol’s economic majority.
+
+==Rationale==
+
+The primary objective of this DigiByte Improvement Proposal (DIP) is to enhance the integrity and focus of the DigiByte community by consolidating all informational and discussion resources within the DigiByte-Core GitHub ecosystem. Over the past decade, the DigiByte protocol development team has encountered challenges related to the spread of misinformation, unrealistic expectations, and fragmented communications. These issues have often stemmed from the diverse array of third-party social networking applications, websites, and advocacy groups previously mentioned on the DigiByte.org website.
+
+This proposal aims to streamline and unify community engagement by guiding users to a single, trusted platform. This approach will enhance transparency, consistency, and foster better collaboration and information sharing among all stakeholders of the DigiByte protocol. Redirecting visitors to the DigiByte-Core/digibyte GitHub Discussions forum and Wiki ensures that all discussions, updates, and resources are sourced from a dependable and collective repository.
+
+This change is not intended to undermine the value of social media and chat applications but to minimize the risks associated with misinformation and enhance security by reducing reliance on external platforms. By emphasizing core development and trusted resources, we aim to create a more connected and informed environment for developers, users, and enthusiasts alike. This proposal ultimately seeks to strengthen the DigiByte development community’s focus on essential development and reliable resources, fostering a more unified and informed environment for all protocol stakeholders representing the DigiByte protocol’s economic majority.
+
+This strategic shift will significantly benefit the DigiByte developer community, promoting a more robust, transparent, and harmonious ecosystem while also delivering a higher quality of life for contributing developers.
+
+==Proposed Section Changes==
+
+=== Page Header ===
+
+==== Change: ====
+
+* Twitter icon to X icon
+
+==== Remove: ====
+
+To address the concerns raised in the DIP discussion, these are proposed to move to the [https://dgbwiki.com/index.php?title=DigiByte DigiByte Wiki] and have the Wiki more prominently displayed on the DigiByte.org website within the "Community" module.
+
+* News XML feed
+* DigiByte pipeline
+* Facebook
+* LinkedIn
+* Instagram
+* YouTube
+* Reddit
+* Medium
+* Telegram
+* Discord
+* Alliance
+* DGBAT
+* Support
+
+=== The history of DigiByte ===
+
+==== Change: ====
+
+n this section, the link to the DigiByte Pipeline should be removed. DigiByte does not have a centralized governance structure. Instead, a decentralized group of long-standing contributing developers maintains and steers the protocol code base and related repositories based on the DIP process and contribution guidelines. Given that, there should not be an implied “roadmap” as we are encouraging the community to contribute DIPs to the protocol to propose future changes to the protocol. Therefore, the link in this section should be changed to the following:
+
+“To learn more about proposed changes to the DigiByte protocol, please visit the DIPs repository: [https://github.com/DigiByte-Core/dips DigiByte DIPs Repository]
+
+To learn more about how you can contribute to DigiByte development, please visit the GitHub Discussion forum: [https://github.com/orgs/DigiByte-Core/discussions DigiByte GitHub Discussions]”
+
+=== Not an ICO ===
+
+==== Remove: ====
+
+* In this section, remove the link to “The Founder.”
+
+=== Getting started with DigiAssets: Need more help? ===
+
+==== Remove: ====
+
+* “Please feel free to join the DigiByte Developers group on Telegram to ask questions or share ideas. DigiByte Developers on Telegram.”
+
+==== Replace: ====
+
+* “Please feel free to join the [https://github.com/orgs/DigiByte-Core/discussions DigiByte discussion forum] on GitHub to ask questions or share ideas.”
+
+=== DigiID: Frequently Asked Questions ===
+
+==== Remove: ====
+
+* “Since Digi-ID is open-source, multiple code repositories can be found on GitHub, such as DigiByte Core Development, Matthew Cornelisse, and WHMCSSnow. If you need more assistance, please join the DigiByte Developers group on Telegram.”
+
+==== Replace: ====
+
+* “Since Digi-ID is open-source, you can learn more by visiting DigiByte Core Development. If you need more assistance, please join the [https://github.com/orgs/DigiByte-Core/discussions DigiByte discussion forum] on GitHub to ask questions.”
+
+=== Community: DigiByte Alliance ===
+
+==== Remove: ====
+
+* The entire DigiByte Alliance module should be removed.
+
+==== Replace: ====
+
+* Relocated to an appropriate thread in the [https://github.com/orgs/DigiByte-Core/discussions DigiByte discussion forum] and added to the [https://dgbwiki.com/index.php?title=DigiByte DigiByte Wiki]
+
+=== Community: DigiByte Awareness Team ===
+
+==== Remove: ====
+
+* The entire DigiByte Alliance module should be removed.
+
+==== Replace: ====
+
+* Relocated to an appropriate thread in the [https://github.com/orgs/DigiByte-Core/discussions DigiByte discussion forum] and added to the [https://dgbwiki.com/index.php?title=DigiByte DigiByte Wiki]
+
+=== Community: DigiByte Developers ===
+
+==== Remove: ====
+
+* DigiByte Developers on Gitter.
+
+==== Replace: ====
+
+* DigiByte Developers on the [https://github.com/orgs/DigiByte-Core/discussions DigiByte discussion forum]
+
+=== Community: Social Media ===
+
+==== Remove: ====
+
+* Relocate Facebook, LinkedIn, Instagram, YouTube, Reddit, Medium, Twitter/x to a [https://dgbwiki.com/index.php?title=DigiByte DigiByte Wiki] social media page
+
+==== Replace: ====
+
+* List [https://github.com/orgs/DigiByte-Core/discussions DigiByte-Core GitHub]
+* List a link to the [https://dgbwiki.com/index.php?title=DigiByte DigiByte Wiki] social media page
+
+=== Community: Telegram ===
+
+==== Remove: ====
+
+* Relocate the Telegram link to the [https://dgbwiki.com/index.php?title=DigiByte DigiByte Wiki] social media page
+
+==== Replace: ====
+
+* Nothing
+
+=== Community: Meet the creator of DigiByte ===
+
+==== Remove: ====
+
+* The entire module should be removed.
+
+==== Replace: ====
+
+* Nothing
+
+=== Community: Social Media Disclaimer ===
+
+==== Remove: ====
+
+* Relocate the disclaimer to the [https://dgbwiki.com/index.php?title=DigiByte DigiByte Wiki] social media page
+
+==== Replace: ====
+
+* Nothing
+
+
+=== Contribute to the DigiByte Community ===
+
+==== Remove: ====
+
+* Relocate all content in this module to a page on the [https://dgbwiki.com/index.php?title=DigiByte DigiByte Wiki]
+
+==== Replace: ====
+
+* Nothing
+
+=== Debit Cards ===
+
+==== Remove: ====
+
+* Uphold
+
+==== Replace: ====
+
+* Nothing
+
+=== DigiID Apps ===
+
+==== Remove: ====
+
+* Digi-ID/AntumID: Android (dead link).
+
+==== Replace: ====
+
+* Nothing
+
+=== Page Footer ===
+
+==== Remove: ====
+
+* Relocate all Telegram links to the [https://dgbwiki.com/index.php?title=DigiByte DigiByte Wiki] social media page
+
+==== Replace: ====
+
+* Nothing
+
+=== Page Footer: DigiByte Links ===
+
+==== Remove: ====
+
+* Relocate DigiByte Alliance, DGB Awareness Team, and Blockchain 2035 to an appropriate page on the [https://dgbwiki.com/index.php?title=DigiByte DigiByte Wiki]
+
+==== Replace: ====
+
+* These items and items like them should have their own thread on the [https://github.com/orgs/DigiByte-Core/discussions DigiByte discussion forum] and an appropriate page on the [https://dgbwiki.com/index.php?title=DigiByte DigiByte Wiki].
+
+=== Page Footer: Resources ===
+
+==== Remove: ====
+
+* Contact Us
+
+==== Replace: ====
+
+* Nothing
