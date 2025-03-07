@@ -3,8 +3,9 @@
   Title: Remove Third-Party Links from DigiByte.org
   Author: GTO90 <gto90@protonmail.com>
   Comments-Summary: Mix of encouraged and discouraged implementation, with some feedback addressed in this draft DIP to move all external and social media links to the DigiByte Wiki and Discussion Forum as well as provide a more prominant promotion of the DigiByte Wiki.
-  Comments-URI: https://github.com/DigiByte-Core/DigiByte.org/pull/134
-  Status: Proposed
+  Comments-URI: https://github.com/DigiByte-Core/dips/discussions/7, 
+  Pull-Request: https://github.com/DigiByte-Core/DigiByte.org/pull/134
+  Status: Final
   Type: Informational
   Created: 2024-06-20
   License: BSD-2-Clause
